@@ -1,6 +1,5 @@
-// Lab 2: Dart Essentials Practice Lab
 
-import 'dart:async'; 
+import 'dart:async';
 
 void main() async {
   print('=== START LAB 2 ===\n');
@@ -18,9 +17,6 @@ void main() async {
   print('\n=== END LAB 2 ===');
 }
 
-// ---------------------------------------------------------------------------
-// Exercise 1 – Basic Syntax & Data Types
-// ---------------------------------------------------------------------------
 void exercise1() {
   print('--- Exercise 1: Basic Syntax & Data Types ---');
 
@@ -38,19 +34,16 @@ void exercise1() {
   print('');
 }
 
-// ---------------------------------------------------------------------------
-// Exercise 2 – Collections & Operators
-// ---------------------------------------------------------------------------
 void exercise2() {
   print('--- Exercise 2: Collections & Operators ---');
 
   List<int> numbers = [10, 20, 30];
-  numbers.add(40); 
+  numbers.add(40);
   print('List of numbers: $numbers');
   print('First element: ${numbers[0]}');
 
   Set<String> fruits = {'Apple', 'Banana', 'Orange'};
-  fruits.add('Apple'); 
+  fruits.add('Apple');
   print('Set of fruits (unique): $fruits');
 
   Map<String, String> capitals = {
@@ -58,7 +51,7 @@ void exercise2() {
     'USA': 'Washington D.C.',
     'Japan': 'Tokyo'
   };
-  capitals['France'] = 'Paris'; 
+  capitals['France'] = 'Paris';
   print('Capital of Vietnam: ${capitals['Vietnam']}');
   print('All Capitals: $capitals');
 
@@ -77,9 +70,6 @@ void exercise2() {
   print('');
 }
 
-// ---------------------------------------------------------------------------
-// Exercise 3 – Control Flow & Functions
-// ---------------------------------------------------------------------------
 void exercise3() {
   print('--- Exercise 3: Control Flow & Functions ---');
 
@@ -133,16 +123,13 @@ int calculateSum(int a, int b) {
 
 int square(int n) => n * n;
 
-// ---------------------------------------------------------------------------
-// Exercise 4 – Intro to OOP
-// ---------------------------------------------------------------------------
 class Car {
   String brand;
   int year;
 
   Car(this.brand, this.year);
 
-  Car.now(this.brand) : year = 2026; 
+  Car.now(this.brand) : year = 2026;
 
   void honk() {
     print('$brand ($year) says: Beep Beep!');
@@ -174,25 +161,22 @@ void exercise4() {
   newCar.honk();
 
   ElectricCar myTesla = ElectricCar('Tesla', 2024, 85.5);
-  myTesla.honk(); 
+  myTesla.honk();
   myTesla.checkBattery();
   print('');
 }
 
-// ---------------------------------------------------------------------------
-// Exercise 5 – Async, Future, Null Safety & Streams
-// ---------------------------------------------------------------------------
 Future<void> exercise5() async {
   print('--- Exercise 5: Async, Future, Null Safety & Streams ---');
 
-  String? name; 
-  print('Name is: ${name ?? "Unknown"}'); 
+  String? name;
+  print('Name is: ${name ?? "Unknown"}');
 
   name = "DartUser";
   print('Name is: $name');
 
   print('Fetching user data...');
-  String data = await fetchUserData(); 
+  String data = await fetchUserData();
   print('Data received: $data');
 
   print('Listening to number stream...');
@@ -203,7 +187,7 @@ Future<void> exercise5() async {
 }
 
 Future<String> fetchUserData() async {
-  await Future.delayed(Duration(seconds: 2)); 
+  await Future.delayed(Duration(seconds: 2));
   return 'User ID: 12345';
 }
 
@@ -213,4 +197,3 @@ Stream<int> countStream(int max) async* {
     yield i;
   }
 }
-
