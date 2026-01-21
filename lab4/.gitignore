@@ -43,15 +43,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-
-# Linux
-/linux/flutter/ephemeral
-/linux/flutter/ephemeral/
-
-# macOS
-/macos/Flutter/ephemeral
-/macos/Flutter/ephemeral/
-
-# Windows
-/windows/flutter/ephemeral
-/windows/flutter/ephemeral/

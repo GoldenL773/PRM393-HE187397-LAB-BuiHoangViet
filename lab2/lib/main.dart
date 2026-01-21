@@ -1,5 +1,5 @@
 
-import 'dart:async';
+import 'dart:async'; 
 
 void main() async {
   print('=== START LAB 2 ===\n');
@@ -38,12 +38,12 @@ void exercise2() {
   print('--- Exercise 2: Collections & Operators ---');
 
   List<int> numbers = [10, 20, 30];
-  numbers.add(40);
+  numbers.add(40); 
   print('List of numbers: $numbers');
   print('First element: ${numbers[0]}');
 
   Set<String> fruits = {'Apple', 'Banana', 'Orange'};
-  fruits.add('Apple');
+  fruits.add('Apple'); 
   print('Set of fruits (unique): $fruits');
 
   Map<String, String> capitals = {
@@ -51,7 +51,7 @@ void exercise2() {
     'USA': 'Washington D.C.',
     'Japan': 'Tokyo'
   };
-  capitals['France'] = 'Paris';
+  capitals['France'] = 'Paris'; 
   print('Capital of Vietnam: ${capitals['Vietnam']}');
   print('All Capitals: $capitals');
 
@@ -129,7 +129,7 @@ class Car {
 
   Car(this.brand, this.year);
 
-  Car.now(this.brand) : year = 2026;
+  Car.now(this.brand) : year = 2026; 
 
   void honk() {
     print('$brand ($year) says: Beep Beep!');
@@ -161,7 +161,7 @@ void exercise4() {
   newCar.honk();
 
   ElectricCar myTesla = ElectricCar('Tesla', 2024, 85.5);
-  myTesla.honk();
+  myTesla.honk(); 
   myTesla.checkBattery();
   print('');
 }
@@ -169,14 +169,14 @@ void exercise4() {
 Future<void> exercise5() async {
   print('--- Exercise 5: Async, Future, Null Safety & Streams ---');
 
-  String? name;
-  print('Name is: ${name ?? "Unknown"}');
+  String? name; 
+  print('Name is: ${name ?? "Unknown"}'); 
 
   name = "DartUser";
   print('Name is: $name');
 
   print('Fetching user data...');
-  String data = await fetchUserData();
+  String data = await fetchUserData(); 
   print('Data received: $data');
 
   print('Listening to number stream...');
@@ -187,7 +187,7 @@ Future<void> exercise5() async {
 }
 
 Future<String> fetchUserData() async {
-  await Future.delayed(Duration(seconds: 2));
+  await Future.delayed(Duration(seconds: 2)); 
   return 'User ID: 12345';
 }
 

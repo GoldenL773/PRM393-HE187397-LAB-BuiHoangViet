@@ -1,3 +1,11 @@
+lab1/linux/flutter/generated_plugin_registrant.cc
+lab1/linux/flutter/generated_plugin_registrant.h
+lab1/linux/flutter/generated_plugins.cmake
+lab1/macos/Flutter/GeneratedPluginRegistrant.swift
+lab1/windows/flutter/generated_plugin_registrant.cc
+lab1/windows/flutter/generated_plugin_registrant.h
+lab1/windows/flutter/generated_plugins.cmake
+
 # Miscellaneous
 *.class
 *.log
