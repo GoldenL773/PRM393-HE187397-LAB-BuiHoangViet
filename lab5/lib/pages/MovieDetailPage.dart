@@ -125,33 +125,20 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
               shrinkWrap: true,
               padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
               itemBuilder: (context, index) {
-                final trailerImage = movie.trailer[index];
-                return Container(
-                  margin: const EdgeInsets.only(bottom: 10),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.black12,
-                  ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Stack(
-                      alignment: Alignment.center,
-                      children: [
-                        Image.asset(
-                          trailerImage,
-                          height: 140,
-                          width: double.infinity,
-                          fit: BoxFit.cover,
-                        ),
-                        Container(color: Colors.black26),
-                        const Icon(
-                          Icons.play_circle_fill_rounded,
-                          color: Colors.white,
-                          size: 44,
-                        ),
-                      ],
+                final trailerTitle = movie.trailer[index];
+                return Column(
+                  children: [
+                    ListTile(
+                      contentPadding: EdgeInsets.zero,
+                      leading: const Icon(
+                        Icons.play_circle_filled,
+                        color: Colors.black54,
+                      ),
+                      title: Text(trailerTitle),
+                      onTap: () {},
                     ),
-                  ),
+                    const Divider(height: 1),
+                  ],
                 );
               },
             ),
