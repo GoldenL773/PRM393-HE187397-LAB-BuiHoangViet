@@ -43,7 +43,7 @@ const List<Movie> allMovies = [
     year: 2024,
     genres: ['Action', 'Sci-Fi'],
     posterUrl:
-        'https://images.unsplash.com/photo-1502139214982-d0ad755818d8?auto=format&fit=crop&w=600&q=80',
+        'assets/images/1.png',
     rating: 8.7,
   ),
   Movie(
@@ -51,7 +51,7 @@ const List<Movie> allMovies = [
     year: 2021,
     genres: ['Drama', 'Romance'],
     posterUrl:
-        'https://images.unsplash.com/photo-1508182311256-e3f9c5cf7a5e?auto=format&fit=crop&w=600&q=80',
+        'assets/images/2.png',
     rating: 7.9,
   ),
   Movie(
@@ -59,7 +59,7 @@ const List<Movie> allMovies = [
     year: 2022,
     genres: ['Comedy'],
     posterUrl:
-        'https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=600&q=80',
+        'assets/images/3.png',
     rating: 7.4,
   ),
   Movie(
@@ -67,7 +67,7 @@ const List<Movie> allMovies = [
     year: 2020,
     genres: ['Thriller', 'Mystery'],
     posterUrl:
-        'https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=600&q=80',
+        'assets/images/4.png',
     rating: 8.2,
   ),
   Movie(
@@ -75,7 +75,7 @@ const List<Movie> allMovies = [
     year: 2019,
     genres: ['Family', 'Comedy'],
     posterUrl:
-        'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80',
+        'assets/images/5.png',
     rating: 7.1,
   ),
   Movie(
@@ -83,7 +83,7 @@ const List<Movie> allMovies = [
     year: 2023,
     genres: ['Adventure', 'Drama'],
     posterUrl:
-        'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=80',
+        'assets/images/6.png',
     rating: 8.5,
   ),
 ];
@@ -351,7 +351,7 @@ class MovieCard extends StatelessWidget {
         children: [
           AspectRatio(
             aspectRatio: 2 / 3,
-            child: Image.network(
+            child: Image.asset(
               movie.posterUrl,
               fit: BoxFit.cover,
               errorBuilder: (context, error, stackTrace) => Container(
