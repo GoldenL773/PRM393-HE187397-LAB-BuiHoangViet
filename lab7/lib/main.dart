@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Signup Lab',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        useMaterial3: true, appBarTheme: const AppBarTheme(elevation: 0, centerTitle: true, backgroundColor: Colors.deepPurple, foregroundColor: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(24), bottomRight: Radius.circular(24)))), cardTheme: CardTheme(elevation: 8, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24))),
+        useMaterial3: true, appBarTheme: const AppBarTheme(elevation: 0, centerTitle: true, backgroundColor: Colors.deepPurple, foregroundColor: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(24), bottomRight: Radius.circular(24)))),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple, brightness: Brightness.dark),
         inputDecorationTheme: const InputDecorationTheme(
           border: OutlineInputBorder(

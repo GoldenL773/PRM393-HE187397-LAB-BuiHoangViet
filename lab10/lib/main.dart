@@ -50,7 +50,7 @@ class Lab10App extends StatelessWidget {
         seedColor: Colors.deepPurple,
         brightness: Brightness.light,
       ),
-      useMaterial3: true, appBarTheme: const AppBarTheme(elevation: 0, centerTitle: true, backgroundColor: Colors.deepPurple, foregroundColor: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(24), bottomRight: Radius.circular(24)))), cardTheme: CardTheme(elevation: 8, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24))),
+      useMaterial3: true, appBarTheme: const AppBarTheme(elevation: 0, centerTitle: true, backgroundColor: Colors.deepPurple, foregroundColor: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(24), bottomRight: Radius.circular(24)))),
     );
 
     final theme = baseTheme.copyWith(

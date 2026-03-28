@@ -19,7 +19,7 @@ class TasklyApp extends StatelessWidget {
         title: 'Taskly',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple, brightness: Brightness.dark),
-          useMaterial3: true, appBarTheme: const AppBarTheme(elevation: 0, centerTitle: true, backgroundColor: Colors.deepPurple, foregroundColor: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(24), bottomRight: Radius.circular(24)))), cardTheme: CardTheme(elevation: 8, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24))),
+          useMaterial3: true, appBarTheme: const AppBarTheme(elevation: 0, centerTitle: true, backgroundColor: Colors.deepPurple, foregroundColor: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(24), bottomRight: Radius.circular(24)))),
         ),
         home: const TaskListScreen(),
       ),
